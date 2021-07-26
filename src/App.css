@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root{
   --header-height: 3rem;
 
@@ -629,6 +630,7 @@ img{
 
 .portfolio__content{
   padding: 0 1.5rem;
+  text-align: center;
 }
 
 .portfolio__img{
@@ -746,7 +748,10 @@ img{
 @media screen and (min-width: 768px) {
   .home{
     align-items: center;
-    max-height: 100vh;
+    height: 100vh;
+  }
+  .home__description{
+    font-size: 1rem;
   }
   ._container{
     margin-left: auto;
@@ -757,7 +762,7 @@ img{
     margin: 0;
   }
   .section{
-    padding: 6rem 0 2rem !important;
+    padding: 6rem 0 4rem !important;
   }
 
   .header,
@@ -809,9 +814,24 @@ img{
   .section__subtitle {
     display: block;
     font-size: 1rem;
-    margin-bottom: 4rem !important;
+    margin-bottom: 6rem !important;
   }
   .skills__name{
     font-size: .8rem;
+  }
+  .portfolio__content{
+    text-align: left;
+    padding: 0 4rem;
+    display: flex;
+  }
+  .portfolio__title{
+    margin-bottom: var(--mb-2);
+  }
+  .portfolio__description{
+    font-size: 1rem;
+    margin-bottom: var(--mb-2);
+  }
+  .portfolio__button{
+    font-size: 1rem;
   }
 }
