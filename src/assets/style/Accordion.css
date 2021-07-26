@@ -1,0 +1,46 @@
+.highliht_section{
+    width: 100%;
+    box-shadow: 0px 5px 10px rgb(231, 231, 231);
+    padding: 18px 0;
+}
+.highliht_header{
+    padding: 18px;
+}
+.hightlith_title_content{
+    padding-bottom: 20px;
+}
+.highlith_title{
+    color: rgb(124, 121, 121);
+    font-weight: 700;
+}
+.accordion_section{
+    display: flex;
+    flex-direction: column;
+
+}
+.accordion{
+    color: rgb(253, 253, 253);
+    font-weight: 900;
+    align-items: center;
+    outline: none;
+    display:flex;
+}
+
+.accordion_title{
+    display: flex;
+    font-size: 1rem;
+}
+.accordion_icon{
+    margin-left: auto;
+    transition: transform 0.5s ease;
+}
+.rotate{
+    transform: rotate(0deg);
+}
+.accordion_content{
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    color: rgb(51, 51, 51);
+    padding-left: 2.7rem;
+    margin-bottom: 2rem;
+}
