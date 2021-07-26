@@ -125,7 +125,7 @@ img{
 }
 
 .section{
-  padding: 2rem 0 6rem;
+  padding: 2rem 0 4rem;
 }
 
 .section__title{
@@ -686,9 +686,9 @@ img{
 
 
 .swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 1.8rem !important;
+  font-size: 1.5rem !important;
   text-transform: none!important;
-  font-weight: 600 !important;
+  font-weight: 900 !important;
   color: var(--first-color) !important;
   letter-spacing: 0;
   text-transform: none;

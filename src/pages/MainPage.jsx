@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import Homepage from './components/Home/Homepage'
 import Portfolio from './components/Portfolio/Portfolio'
+import Project from './components/Project/Project'
 import Qualification from './components/Qualification/Qualification'
 import Skills from './components/skills/Skills'
 import NavBar from './Navbar/Navbar'
@@ -46,6 +47,11 @@ export default function MainPage() {
                     <span className="section__subtitle">Mes differentes realisations</span>
                     <Portfolio/>
                 </section>
+                <section className="project section">
+                    <div className="project__bg">
+                        <Project/>
+                    </div>
+                </section> 
                 <section className="contact section" id="contact">
                     <h2 className="section__title">Me contactez</h2>
                     <span className="section__subtitle">Contactez-moi</span>
