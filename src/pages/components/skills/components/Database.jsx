@@ -1,6 +1,8 @@
+import ProgressBar from '@ramonak/react-progress-bar'
 import React, { useRef, useState } from 'react'
 import { AiFillDatabase } from 'react-icons/ai'
 import {MdKeyboardArrowDown} from 'react-icons/md'
+import databaseData from '../../../../assets/json/Databases.json'
 
 export default function Database() {
     const [active, setActive] = useState("")
@@ -25,35 +27,22 @@ export default function Database() {
                     <MdKeyboardArrowDown className={`skills__arrow ${rotate}`}/>
                 </div>
                 <div ref={content} style={{maxHeight:`${height}`}} className="skills__list _grid accordion_content">
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__number">70%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__mysql"></span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Postgresql</h3>
-                            <span className="skills__number">65%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__psql"></span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Mongodb</h3>
-                            <span className="skills__number">75%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__mongodb"></span>
-                        </div>
-                    </div>
+                    {
+                        databaseData.databases && databaseData.databases.map(list => (
+                            <div key={list.id} className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">{list.label}</h3>
+                                </div>
+                                <ProgressBar
+                                        animateOnRender={true}
+                                        completed={list.completed}
+                                        height="10px"
+                                        labelClassName="label"
+                                        bgColor='hsl(var(--hue-color), 69%, 61%)'
+                                    />
+                            </div>
+                        ))
+                    }
 
                     
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
@@ -7,10 +7,13 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Project from './components/Project/Project'
 import Qualification from './components/Qualification/Qualification'
 import Skills from './components/skills/Skills'
-import Testimonial from './components/Testimonial/Testimonial'
 import NavBar from './Navbar/Navbar'
+import bgImage from '../assets/bg/home.jpg'
+import Testimonial from './components/Testimonial/Testimonial'
+import FooterComponent from './components/Footer/FooterComponent'
 export default function MainPage() {
-   
+
+    const [background, setBg] = useState("")   
     const detectScroll = ()=>{
         const scrollUp = document.getElementById("scroll-up")
         if(window.scrollY >= 560){
@@ -20,12 +23,28 @@ export default function MainPage() {
         }
     }
 
+    const toggleBtn = (e) => {
+        setBg("black")
+        localStorage.setItem('bg', background)
+    }
+
     window.addEventListener('scroll', detectScroll)
     return (
-        <div>
-            <NavBar/>
+        <div style={{
+            backgroundImage: 
+                `url(${bgImage})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundClip: 'content-box'
+            }}>
+            <NavBar bg={ background } action={toggleBtn} />
             <main className="main">
-                <section className="home section" id="home">
+                <section className="home section" id="home" style={{
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    paddingBottom: '0px'
+                }}>
                     <Homepage/>
                 </section>
                 <section className="about section" id="about">
@@ -44,27 +63,35 @@ export default function MainPage() {
                     <Qualification/>
                 </section>
                 <section className="portfolio section" id="portfolio">
-                    <h2 className="section__title">Mes portfolio</h2>
+                    <h2 className="section__title">Mes réalisations</h2>
                     <span className="section__subtitle">Mes differentes realisations</span>
                     <Portfolio/>
                 </section>
+                {/**
                 <section className="project section">
                     <div className="project__bg">
                         <Project/>
                     </div>
                 </section> 
+                */}
+                
+                {/**
                 <section className="testimonial section">
                     <h2 className="section__title">Recommendations</h2>
                     <span className="section__subtitle">Recommendation des clients</span>
                     <Testimonial/>
                 </section>
+                */}
+                
                 <section className="contact section" id="contact">
                     <h2 className="section__title">Me contactez</h2>
                     <span className="section__subtitle">Si vous avez besoin des info? Contactez-moi.</span>
                     <Contact/>
                 </section>
             </main>
-            <footer></footer>
+            <footer className='__footer'>
+                <FooterComponent/>
+            </footer>
             <a href="#home" className="scrollup" id="scroll-up">
                 <FaArrowUp className="scrollup__icon"/>
             </a>

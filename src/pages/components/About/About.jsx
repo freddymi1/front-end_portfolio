@@ -2,27 +2,37 @@ import React from 'react'
 import {GoCloudDownload} from 'react-icons/go'
 
 import aboutImg from '../../../assets/cv/moncv.pdf'
+import abtImg from '../../../assets/img/abt.jpg'
 
 export default function About() {
     return (
         <div className="about__container _container _grid">
-            <img src="img/about.jpg" alt="" className="about__img" />
+            
             <div className="about__data">
                 <p className="about__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam ex porro sit temporibus quis, officia, id ea accusamus cupiditate repellendus voluptatem. Qui maiores, inventore quae in sed ipsa odio.
+                    Titulaire de diplôme de Licence professionnel et de Diplôme
+
+                    Technicien supérieur en Informatique Gestion. Développeur Full-
+                    Stack, Javascript(React - Angular - Ionic - VueJS / NodeJS) et
+
+                    PHP(Laravel - Symfony). Apres, developpeur React Redux chez
+                    TALIUM France pour la developpement de plateforme de tokenisation
+                    de la société pendant 5 mois. Je suis chez INGENOSYA Madagascar en
+                    ce moment en tant que developpeur React/Symfony, dynamique,
+                    sociable, rigoureux. J'aime relever le nouveau défi.
                 </p>
                 <div className="about__info">
                     <div>
-                        <span className="about__info-title">08+</span>
-                        <span className="about__info-name">Annee <br/> d'experience</span>
+                        <span className="about__info-title">02+</span>
+                        <span className="about__info-name">Année <br/> d'experience</span>
                     </div>
                     <div>
                         <span className="about__info-title">05+</span>
-                        <span className="about__info-name">Projet <br/> complet</span>
+                        <span className="about__info-name">Projet <br/> réalisés</span>
                     </div>
                     <div>
                         <span className="about__info-title">03+</span>
-                        <span className="about__info-name">Societe <br/> travaille</span>
+                        <span className="about__info-name">Société <br/> travaillé</span>
                     </div>
                 </div>
                 <div className="about__buttons">
@@ -31,6 +41,7 @@ export default function About() {
                     </a>
                 </div>
             </div>
+            <img src={abtImg} alt="" className="about__img" />
         </div>
     )
 }

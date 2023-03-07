@@ -1,0 +1,19 @@
+{
+    "others" : [
+        {
+            "id": 1,
+            "label": "Git",
+            "completed": 80
+        },
+        {
+            "id": 2,
+            "label": "Docker",
+            "completed": 70
+        },
+        {
+            "id": 3,
+            "label": "Test unitaire",
+            "completed": 65
+        }
+    ]
+}

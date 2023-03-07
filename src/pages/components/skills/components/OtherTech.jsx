@@ -1,10 +1,11 @@
-import ProgressBar from '@ramonak/react-progress-bar'
 import React, { useRef, useState } from 'react'
-import { AiOutlineCloudServer } from 'react-icons/ai'
-import { MdKeyboardArrowDown } from 'react-icons/md'
-import backendData from '../../../../assets/json/BackEnd.json'
+import { AiOutlineCloudServer } from 'react-icons/ai';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import ProgressBar from "@ramonak/react-progress-bar";
 
-export default function Backend() {
+import data from '../../../../assets/json/Others.json'
+
+export default function OtherTech() {
     const [active, setActive] = useState("")
     const [height, setHeight] = useState("0px")
     const [rotate, setRotate] = useState("accordion_icon")
@@ -21,14 +22,15 @@ export default function Backend() {
                 <div className="skills__header"  onClick={toggleAccordion}>
                     <AiOutlineCloudServer className="skills__icon"/>
                     <div>
-                        <h1 className="skills__title">Back-end</h1>
+                        <h1 className="skills__title">Autres</h1>
                         {/* <span className="skills__subtitle">Environ 5 mois</span> */}
                     </div>
                     <MdKeyboardArrowDown className={`skills__arrow ${rotate}`}/>
                 </div>
-                <div ref={content} style={{maxHeight:`${height}`}} className="skills__list _grid accordion_content">
+                <div ref={content} style={{ maxHeight: `${height}` }} className="skills__list _grid accordion_content">
+                    
                     {
-                        backendData.backEnd && backendData.backEnd.map(list => (
+                        data.others && data.others.map(list => (
                             <div key={list.id} className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">{list.label}</h3>
@@ -36,14 +38,16 @@ export default function Backend() {
                                 <ProgressBar
                                         animateOnRender={true}
                                         completed={list.completed}
-                                    height="10px"
-                                    width='100%'
+                                        height="10px"
                                         labelClassName="label"
                                         bgColor='hsl(var(--hue-color), 69%, 61%)'
                                     />
                             </div>
                         ))
                     }
+                    
+
+                    
                     
                 </div>
             </div>

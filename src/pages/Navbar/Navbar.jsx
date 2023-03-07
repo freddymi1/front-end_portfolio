@@ -1,13 +1,13 @@
 import { HashLink } from "react-router-hash-link";
 
 import {FaRegUser} from 'react-icons/fa';
-import {IoBriefcaseOutline, IoMoonOutline} from 'react-icons/io5';
+import {IoBriefcaseOutline} from 'react-icons/io5';
 import {AiOutlineHome, AiOutlineSend, AiOutlineCloseCircle, AiOutlineAppstore} from 'react-icons/ai';
 import {BsImage} from 'react-icons/bs';
 import {GiSkills} from 'react-icons/gi'
 import { useState } from "react";
 
-export default function NavBar() {
+export default function NavBar({bg, action}) {
     const [isOpen, setIsOpen] = useState(false)
     
     const navMenu = document.getElementById('nav-menu');
@@ -74,7 +74,7 @@ export default function NavBar() {
     
 
     return(
-        <header className="header" id="header">
+        <header className="header" id="header" style={{background: `${bg}`, color: 'white'}}>
             <nav className="_nav _container">
                 <HashLink to="#" className="nav__logo">Freddy Michel</HashLink>
                 <div className="nav__menu" id="nav-menu">
@@ -113,7 +113,7 @@ export default function NavBar() {
                     <AiOutlineCloseCircle className="nav__close" id="nav-close" onClick={(e)=>handleClose(e)}/>
                 </div>
                 <div className="nav__btns">
-                    <IoMoonOutline className="change-theme" id="theme-button"/>
+                    {/**<IoMoonOutline className="change-theme" id="theme-button" onClick={action}/> */}
                     <div className="nav__toggle" id="nav-toggle" onClick={(e)=>handleOpen(e)}>
                         <AiOutlineAppstore/>
                     </div>

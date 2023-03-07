@@ -1,0 +1,14 @@
+{
+    "backEnd" : [
+        {
+            "id": 1,
+            "label": "NodeJS/TS",
+            "completed": 65
+        },
+        {
+            "id": 2,
+            "label": "PHP Laravel",
+            "completed": 60
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "frontend" : [
+        {
+            "id": 1,
+            "label": "HTML",
+            "completed": 85
+        },
+        {
+            "id": 2,
+            "label": "CSS",
+            "completed": 75
+        },
+        {
+            "id": 3,
+            "label": "SCSS",
+            "completed": 70
+        },
+        {
+            "id": 4,
+            "label": "JavaScript",
+            "completed": 65
+        },
+        {
+            "id": 5,
+            "label": "React JS/TS",
+            "completed": 75
+        },
+        {
+            "id": 6,
+            "label": "Angular",
+            "completed": 70
+        },
+        
+        {
+            "id": 7,
+            "label": "Bootstrap",
+            "completed": 70
+        },
+        {
+            "id": 8,
+            "label": "Tailwindcss",
+            "completed": 75
+        }
+    ]
+}

@@ -6,32 +6,50 @@ export default function Work() {
         <div>
             {/* ======CALIF 1 ====== */}
             <div className="qualification__data">
-                <div></div>
+                
+                <div>
+                    <h3 className="qualification__title">Développeur React/Redux</h3>
+                    <span className="qualification__subtitle">Talium France</span>
+                    <div className="qualification__calendar">
+                        <IoCalendarOutline className="calendar__icon"/>
+                        Février 2022 - Juillet 2022
+                    </div>
+                </div>
+
                 <div>
                     <span className="qualification__rounded"></span>
                     <span className="qualification__line"></span>
                 </div>
-                <div>
-                    <h3 className="qualification__title">Developpeur Front-end</h3>
-                    <span className="qualification__subtitle">Sayna Madagascar</span>
-                    <div className="qualification__calendar">
-                        <IoCalendarOutline className="calendar__icon"/>
-                        2020 - ?
-                    </div>
-                </div>
-
-               
                 
             </div>
 
             {/* ======CALIF 2 ====== */}
             <div className="qualification__data">
+                <div></div>
                 <div>
-                    <h3 className="qualification__title">Technicien SAV</h3>
-                    <span className="qualification__subtitle">SODIM</span>
+                    <span className="qualification__rounded"></span>
+                    <span className="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 className="qualification__title">Développeur Front-end</h3>
+                    <span className="qualification__subtitle">Ingenosya Madagascar</span>
                     <div className="qualification__calendar">
                         <IoCalendarOutline className="calendar__icon"/>
-                        03/2020 - 04/2020 
+                        Février 2022 - ? 
+                    </div>
+                </div>
+                
+            </div>
+
+            {/* ======CALIF 3 ====== */}
+            <div className="qualification__data">
+                 
+                <div>
+                    <h3 className="qualification__title">Développeur Full-stack JS</h3>
+                    <span className="qualification__subtitle">Sayna Madagascar</span>
+                    <div className="qualification__calendar">
+                        <IoCalendarOutline className="calendar__icon"/>
+                        2020 - 2022 
                     </div>
                 </div>
                 <div>
@@ -40,18 +58,19 @@ export default function Work() {
                 </div>
             </div>
 
+            {/* ======CALIF 3 ====== */}
             <div className="qualification__data">
-                <div></div>
-                <div>
+                 <div></div>
+                 <div>
                     <span className="qualification__rounded"></span>
                     {/* <span className="qualification__line"></span> */}
                 </div>
                 <div>
-                    <h3 className="qualification__title">Technicien en Informatique</h3>
-                    <span className="qualification__subtitle">Atout-Serveice Madagascar</span>
+                    <h3 className="qualification__title">Technicien Informatique</h3>
+                    <span className="qualification__subtitle">Atout Service</span>
                     <div className="qualification__calendar">
                         <IoCalendarOutline className="calendar__icon"/>
-                        2018 - 2019 
+                        2018 - 2019
                     </div>
                 </div>
                 

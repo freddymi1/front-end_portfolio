@@ -1,0 +1,24 @@
+{
+    "design" : [
+        {
+            "id": 1,
+            "label": "Adobe illustrator",
+            "completed": 70
+        },
+        {
+            "id": 2,
+            "label": "Adobe photoshop",
+            "completed": 75
+        },
+        {
+            "id": 3,
+            "label": "Figma",
+            "completed": 70
+        },
+        {
+            "id": 4,
+            "label": "Adobe XD",
+            "completed": 65
+        }
+    ]
+}

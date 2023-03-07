@@ -1,6 +1,8 @@
+import ProgressBar from '@ramonak/react-progress-bar'
 import React, { useRef, useState } from 'react'
 import { FaSwatchbook } from 'react-icons/fa'
 import {MdKeyboardArrowDown} from 'react-icons/md'
+import designData from '../../../../assets/json/Design.json'
 
 export default function Designer() {
     const [active, setActive] = useState("")
@@ -25,45 +27,23 @@ export default function Designer() {
                     <MdKeyboardArrowDown className={`skills__arrow ${rotate}`}/>
                 </div>
                 <div ref={content} style={{maxHeight:`${height}`}} className="skills__list _grid accordion_content">
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Adobe illustrator</h3>
-                            <span className="skills__number">70%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__ai"></span>
-                        </div>
-                    </div>
+                    {
+                        designData.design && designData.design.map(list => (
+                            <div key={list.id} className="skills__data">
+                                <div className="skills__titles">
+                                    <h3 className="skills__name">{list.label}</h3>
+                                </div>
+                                <ProgressBar
+                                        animateOnRender={true}
+                                        completed={list.completed}
+                                        height="10px"
+                                        labelClassName="label"
+                                        bgColor='hsl(var(--hue-color), 69%, 61%)'
+                                    />
+                            </div>
+                        ))
+                    }
 
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Adobe photoshop</h3>
-                            <span className="skills__number">75%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__ps"></span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Figma</h3>
-                            <span className="skills__number">70%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__figma"></span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <div className="skills__titles">
-                            <h3 className="skills__name">Adobe XD</h3>
-                            <span className="skills__number">65%</span>
-                        </div>
-                        <div className="skills__bar">
-                            <span className="skills__percentage skills__xd"></span>
-                        </div>
-                    </div>
                     
                 </div>
             </div> 

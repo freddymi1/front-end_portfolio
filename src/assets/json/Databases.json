@@ -1,0 +1,19 @@
+{
+    "databases" : [
+        {
+            "id": 1,
+            "label": "MySQL",
+            "completed": 70
+        },
+        {
+            "id": 2,
+            "label": "Postgresql",
+            "completed": 65
+        },
+        {
+            "id": 3,
+            "label": "MongoDB",
+            "completed": 75
+        }
+    ]
+}

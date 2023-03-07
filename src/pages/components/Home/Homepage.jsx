@@ -4,22 +4,25 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import {BiMouse} from 'react-icons/bi'
 import {TiArrowDown} from 'react-icons/ti'
 import { HashLink } from 'react-router-hash-link'
-
+import Typed from "react-typed"
+import aboutImg from '../../../assets/cv/moncv.pdf'
+import { GoCloudDownload } from 'react-icons/go'
 
 export default function Homepage() {
     return (
         <div className="home__container _container _grid">
             <div className="home__content _grid">
                 <div className="home__social">
-                    <a href="https://linkedin.com/" target="blank" className="home__social-icon">
+                    <a href="https://www.linkedin.com/in/narisoa-harilala-freddy-michel-49aa031a1/" target="blank" className="home__social-icon">
                         <FaLinkedinIn/>
                     </a>
-                    <a href="https://github.com/" target="blank" className="home__social-icon">
+                    <a href="https://github.com/freddymi1" target="blank" className="home__social-icon">
                         <AiOutlineGithub/>
                     </a>
-                    <a href="https://facebook.com/" target="blank" className="home__social-icon">
+                    <a href="https://web.facebook.com/freddy.michel.395" target="blank" className="home__social-icon">
                         <FaFacebookF/>
                     </a>
+                    
                 </div>
                 <div className="home__img">
                     <svg className="home__blob" viewBox="0 0 200 187">
@@ -40,14 +43,74 @@ export default function Homepage() {
                 </div>
 
                 <div className="home__data">
-                    <h1 className="home__title">Hi, i'm Freddy Michel</h1>
-                    <h3 className="home__subtitle">Developpeur Full-Stack JavaScript</h3>
-                    <p className="home__description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta adipisci maiores eum, nihil veritatis odio.
-                    </p>
-                    <HashLink to="#contact" className="button button--flex">
-                        Contactez-moi <AiOutlineSend className="button__icon"/>
-                    </HashLink>
+                    <Typed className='home__title'
+                        strings={[
+                            "Bonjour,",
+                            "Je suis Freddy Michel"
+                        ]}
+                        style={{fontWeight: "bold"}}
+                        typeSpeed={250}
+                        backSpeed={200}
+                        loop
+                    />
+
+
+                    {/**
+                        <br />
+
+                    <Typed className='home__title'
+                        strings={[
+                            
+                        ]}
+                        style={{fontWeight: "bold"}}
+                        typeSpeed={200}
+                        backSpeed={150}
+                        loop
+                    />
+                    */}
+
+
+                    <br />
+                    
+                    <Typed className='home__subtitle'
+                        strings={[
+                            "Développeur Full-Stack JavaScript"
+                        ]}
+                        style={{fontWeight: "bold"}}
+                        typeSpeed={150}
+                        backSpeed={100}
+                        loop
+                    />
+
+                    <br />
+
+                    <div style={{marginTop: "2rem"}}>
+                    
+                    </div>
+                    
+                    <Typed className='home__description'
+                        strings={[
+                            "je suis passionné par l informatique et la nouvelles technologies. J'aime relever de nouveaux défis."
+                        ]}
+                        style={{fontWeight: "normal"}}
+                        typeSpeed={150}
+                        backSpeed={100}
+                        loop={false}
+                    />
+                   
+                     
+                    <br />
+                    <div style={{marginTop: "2rem"}}>
+                    
+                    </div>                    
+                    <div className='home__btn'>
+                        <HashLink to="#contact" className="button button--flex">
+                            Contactez-moi <AiOutlineSend className="button__icon"/>
+                        </HashLink>
+                        <a download="Freddy Michel CV" href={aboutImg} className="button button--flex">
+                            Telecharger mon cv<GoCloudDownload className="button__icon"/>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="home__scroll">

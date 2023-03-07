@@ -1,0 +1,106 @@
+{
+    "mesRealisations" : [
+        {
+            "id": 1,
+            "project": "A.M.I.T",
+            "label": "Conception et développement de l'application",
+            "platforme": "Web",
+            "techno": [
+                "Angular",
+                "Symfony",
+                "Postgresql",
+                "Material UI"
+            ],
+            "societe": "INGENOSYA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 2,
+            "project": "IMPTOB",
+            "label": "Correction et debogage de l'application mobile ",
+            "platforme": "Web",
+            "techno": [
+                "Ionic",
+                "Prisme"
+            ],
+            "societe": "INGENOSYA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 3,
+            "project": "SAFE-2-LOAD",
+            "label": "Correction et debogage de l'application mobile et web",
+            "platforme": "Web et Mobile",
+            "techno": [
+                "Java Native",
+                "PHP Codeigniter"
+            ],
+            "societe": "INGENOSYA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 4,
+            "project": "TALIUM ASSETS",
+            "label": "Développement et correction de design de l'application",
+            "platforme": "Web",
+            "techno": [
+                "React",
+                "Redux"
+            ],
+            "societe": "TALIUM France",
+            "description" :""
+        },
+        {
+            "id": 5,
+            "project": "KAZO",
+            "label": "Développement et conception d'une application mobile",
+            "platforme": "Mobile",
+            "techno": [
+                "React",
+                "Ionic",
+                "Firebase"
+            ],
+            "societe": "SAYNA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 6,
+            "project": "G.A COMMUNITY",
+            "label": "Développement et conception d'une application web",
+            "platforme": "Web",
+            "techno": [
+                "Laravel",
+                "MySQL"
+            ],
+            "societe": "SAYNA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 7,
+            "project": "CARTOOL",
+            "label": "Développement et conception d'une application web et mobile",
+            "platforme": "Web et Mobile",
+            "techno": [
+                "React",
+                "Ionic",
+                "Node",
+                "Mongo DB"
+            ],
+            "societe": "SAYNA Madagascar",
+            "description" :""
+        },
+        {
+            "id": 8,
+            "project": "HAODY MADAGASCAR",
+            "label": "Développement et conception d'une application web",
+            "platforme": "Web",
+            "techno": [
+                "React",
+                "Node",
+                "MySQL"
+            ],
+            "societe": "Freelance",
+            "description" :""
+        }
+    ]
+}

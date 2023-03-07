@@ -1,0 +1,19 @@
+{
+    "mobile" : [
+        {
+            "id": 1,
+            "label": "Ionic Angular/React",
+            "completed": 75
+        },
+        {
+            "id": 2,
+            "label": "Flutter",
+            "completed": 60
+        },
+        {
+            "id": 3,
+            "label": "React Native",
+            "completed": 70
+        }
+    ]
+}
