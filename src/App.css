@@ -102,7 +102,7 @@ body{
   font-size: var(--normal-font-size);
   background: var(--body-color);
   color: var(--text-color);
-  overflow-x: none !important;
+  overflow-x: hidden !important;
 }
 ol, ul {
   padding: 0 !important;
@@ -938,7 +938,7 @@ img{
   }
   body{
     margin: 0;
-    overflow-x: none !important;
+    overflow-x: hidden !important;
   }
   .section{
     padding: 6rem 0 4rem !important;
