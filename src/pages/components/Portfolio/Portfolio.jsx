@@ -25,6 +25,7 @@ export default function Portfolio() {
             <Swiper 
                 keyboard={true}
                 grabCursor={true}
+                scrollbar={false}
                 spaceBetween= {48}
                 pagination={{ 
                     clickable: true ,
