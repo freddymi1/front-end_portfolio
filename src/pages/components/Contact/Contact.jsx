@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react'
 import { IoSendOutline } from 'react-icons/io5'
 import abtImg from '../../../assets/img/abt.jpg'
 import emailjs from '@emailjs/browser';
-import axios from 'axios'
 
 export default function Contact() {
     const ref = useRef();
