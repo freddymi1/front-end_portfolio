@@ -51,7 +51,7 @@ export default function Contact() {
 
                     </div>
                     <div className="about__buttons">
-                        <button type="submit" className="button button--flex">
+                        <button type="submit" className="button button--flex" style={{border: "none", cursor: "pointer"}}>
                             Me contacter<IoSendOutline className="button__icon"/>
                         </button>
                     </div>
