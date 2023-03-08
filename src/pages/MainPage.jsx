@@ -110,7 +110,7 @@ export default function MainPage() {
                                 <FaArrowUp className="scrollup__icon"/>
                             </a>
                         </div>
-                        </>
+                    </>
                 )
             }
         </>
