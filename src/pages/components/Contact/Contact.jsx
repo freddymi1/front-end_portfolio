@@ -14,7 +14,6 @@ export default function Contact() {
     const sendEmail = (event) => {
         event.preventDefault();
         emailjs.sendForm("service_ehwiotu", "template_qfgq37u", ref.current, "yjRBfZDrqI4T6bdNQ").then(res => {
-            console.log("Res", res);
             setName("")
             setEmail("")
             setMessage("")
@@ -28,7 +27,7 @@ export default function Contact() {
         <div className="about__container _container _grid">
             <img src={abtImg} alt="" className="about__img" />
             <div className="about__data">
-                <form ref={ref} onSubmit={sendEmail}>
+                <form ref={ref} onSubmit={sendEmail} style={{width: "100%"}}>
                     <div className='form-group'>
                         <div className='input-group'>
                             <label className='input__label'>Nom de l'envoyeur</label>
