@@ -7,6 +7,11 @@
         },
         {
             "id": 2,
+            "label": "NestJS",
+            "completed": 65
+        },
+        {
+            "id": 3,
             "label": "PHP Laravel",
             "completed": 60
         }

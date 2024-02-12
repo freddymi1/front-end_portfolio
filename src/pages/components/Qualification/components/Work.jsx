@@ -6,6 +6,25 @@ export default function Work() {
         <div>
             {/* ======CALIF 1 ====== */}
             <div className="qualification__data">
+                <div></div>
+                <div>
+                    <span className="qualification__rounded"></span>
+                    <span className="qualification__line"></span>
+                </div>
+                <div>
+                    <h3 className="qualification__title">Développeur Full-stack</h3>
+                    <span className="qualification__subtitle">SFEIRA/MDCL</span>
+                    <div className="qualification__calendar">
+                        <IoCalendarOutline className="calendar__icon"/>
+                        Juillet 2023 - ?
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            {/* ======CALIF 1 ====== */}
+            <div className="qualification__data">
                 
                 <div>
                     <h3 className="qualification__title">Développeur React/Redux</h3>

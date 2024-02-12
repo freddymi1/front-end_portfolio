@@ -18,7 +18,7 @@
         {
             "id": 4,
             "label": "JavaScript",
-            "completed": 65
+            "completed": 70
         },
         {
             "id": 5,
@@ -27,19 +27,24 @@
         },
         {
             "id": 6,
+            "label": "NextJS",
+            "completed": 75
+        },
+        {
+            "id": 7,
             "label": "Angular",
             "completed": 70
         },
         
         {
-            "id": 7,
+            "id": 8,
             "label": "Bootstrap",
-            "completed": 70
+            "completed": 80
         },
         {
-            "id": 8,
+            "id": 9,
             "label": "Tailwindcss",
-            "completed": 75
+            "completed": 80
         }
     ]
 }
